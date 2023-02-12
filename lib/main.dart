@@ -3,6 +3,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:knowshare_app/knowshare/core/theme.dart';
+import 'package:knowshare_app/knowshare/provider/component/bottomnavbar.dart';
 import 'package:knowshare_app/knowshare/provider/syscheck.dart';
 import 'package:knowshare_app/knowshare/routes/homescreen.dart';
 import 'package:knowshare_app/knowshare/routes/splash.dart';
@@ -28,7 +29,8 @@ void main() async{
         child: Builder(
           builder:(context)=>MultiProvider(
             providers: [
-              ChangeNotifierProvider(create: (_)=>sysCheckProvider())
+              ChangeNotifierProvider(create: (_)=>sysCheckProvider()),
+              ChangeNotifierProvider(create: (_)=>bottomNavProvider()),
             ],
             child:ResponsiveSizer(
 
