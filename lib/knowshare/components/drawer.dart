@@ -1,28 +1,23 @@
+
 import 'package:flutter/material.dart';
-import 'package:knowshare_app/knowshare/provider/component/bottomnavbar.dart';
-import 'package:provider/provider.dart';
-class CustomBottomNavigator extends StatefulWidget {
-  const CustomBottomNavigator({Key? key}) : super(key: key);
-
-  @override
-  State<CustomBottomNavigator> createState() => _CustomBottomNavigatorState();
-}
-
-class _CustomBottomNavigatorState extends State<CustomBottomNavigator> {
-  int _selectedIndex = 0;
+class CustomDrawer extends StatelessWidget {
+  const CustomDrawer({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    final bottomNavState = context.read<bottomNavProvider>();
-    return BottomNavigationBar(
-        onTap: (index){
-          bottomNavState.changeIndex(index);
-        },
-        currentIndex:context.watch<bottomNavProvider>().selectedIndex,
-        items:const [
-          BottomNavigationBarItem(icon: Icon(Icons.home),label: ""),
-          BottomNavigationBarItem(icon: Icon(Icons.book),label: ""),
-          BottomNavigationBarItem(icon: Icon(Icons.settings),label: ""),
-        ]);
+    return Drawer(
+      backgroundColor: Colors.black54,
+      child: SingleChildScrollView(
+        child: Column(
+          children: [
+            Divider(height: 40,),
+            ListTile(title: Text("Login"),),
+            ListTile(title: Text("About"),),
+            ListTile(title: Text("Logout"),),
+            ListTile(title: Text("About"),),
+          ],
+        ),
+      ),
+    );
   }
 }
