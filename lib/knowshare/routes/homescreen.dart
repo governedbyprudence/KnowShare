@@ -29,7 +29,7 @@ class _homeScreenRouteState extends State<homeScreenRoute> {
       child: Scaffold(
         drawer: const CustomDrawer(),
         appBar: appBarComponents.appBar1(context),
-        bottomNavigationBar: CustomBottomNavigator(),
+        bottomNavigationBar:const CustomBottomNavigator(),
         body: Consumer<bottomNavProvider>(
           builder:(context,state,child){
             if(state.selectedIndex==0){

@@ -38,7 +38,7 @@ dependencies:
   responsive_sizer:
   google_fonts:
   page_transition:
-
+  sign_button: ^2.0.3
   shared_preferences:
 
   firebase_core:

@@ -3,14 +3,15 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:knowshare_app/knowshare/core/theme.dart';
+import 'package:knowshare_app/knowshare/provider/Auth/auth.dart';
 import 'package:knowshare_app/knowshare/provider/component/bottomnavbar.dart';
 import 'package:knowshare_app/knowshare/provider/syscheck.dart';
 import 'package:knowshare_app/knowshare/routes/homescreen.dart';
+import 'package:knowshare_app/knowshare/routes/login.dart';
 import 'package:knowshare_app/knowshare/routes/splash.dart';
 import 'package:provider/provider.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 import 'package:theme_provider/theme_provider.dart';
-
 import 'firebase_options.dart';
 void main() async{
  WidgetsFlutterBinding.ensureInitialized();
@@ -31,6 +32,7 @@ void main() async{
             providers: [
               ChangeNotifierProvider(create: (_)=>sysCheckProvider()),
               ChangeNotifierProvider(create: (_)=>bottomNavProvider()),
+              ChangeNotifierProvider(create: (_)=>authProvider())
             ],
             child:ResponsiveSizer(
 
