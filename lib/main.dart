@@ -18,7 +18,7 @@ void main() async{
  await Firebase.initializeApp(
    options: DefaultFirebaseOptions.currentPlatform,
  );
-  runApp(
+  runApp (
     DevicePreview(
       enabled: kDebugMode,
       builder:(context)=>ThemeProvider(

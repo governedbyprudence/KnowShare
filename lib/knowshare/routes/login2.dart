@@ -38,7 +38,7 @@ class _loginScreenRouteState extends State<loginScreenRoute> {
               decoration: BoxDecoration(
                 gradient: LinearGradient(
                   colors: [
-                    Colors.blue.shade800,
+                    Colors.green.shade800,
                     Colors.greenAccent.shade400,
                     Colors.lightGreen.shade400,
                   ],
@@ -95,7 +95,7 @@ class _loginScreenRouteState extends State<loginScreenRoute> {
                                   borderRadius: BorderRadius.circular(10),
                                   boxShadow: [
                                     BoxShadow(
-                                      color: Color.fromRGBO(172, 120, 85, 0.294),
+                                      color: Color.fromRGBO(99, 96, 94, 0.298),
                                       blurRadius: 20,
                                       offset: Offset(0, 10),
                                     ),
@@ -148,7 +148,7 @@ class _loginScreenRouteState extends State<loginScreenRoute> {
                                 margin: EdgeInsets.symmetric(horizontal: 50),
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(50),
-                                  color: Color.fromARGB(255, 45, 128, 121),
+                                  color: Colors.green.shade800,
                                 ),
                                 child: Center(
                                   child: Text(
