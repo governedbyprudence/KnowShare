@@ -1,5 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:knowshare_app/knowshare/routes/explore.dart';
 import 'package:provider/provider.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 import '../components/cards.dart';
@@ -16,6 +17,8 @@ class _HomeState extends State<Home> {
     {"title":"Saved","color":AppColors.lightViolet,"onTap":(context){}},
     {"title":"History","color":AppColors.mediumBlue,"onTap":(context){}},
     {"title":"Uploaded","color":AppColors.lightGreen,"onTap":(context){}},
+    {"title":"Categories","color":AppColors.mediumBlue,"onTap": {}},
+
   ];
   @override
   Widget build(BuildContext context) {

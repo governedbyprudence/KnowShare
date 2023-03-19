@@ -95,7 +95,8 @@ class _loginScreenRouteState extends State<loginScreenRoute> {
                                   borderRadius: BorderRadius.circular(10),
                                   boxShadow: [
                                     BoxShadow(
-                                      color: Color.fromRGBO(172, 120, 85, 0.294),
+                                      color:
+                                          Color.fromRGBO(172, 120, 85, 0.294),
                                       blurRadius: 20,
                                       offset: Offset(0, 10),
                                     ),
@@ -143,24 +144,31 @@ class _loginScreenRouteState extends State<loginScreenRoute> {
                               SizedBox(
                                 height: 40,
                               ),
-                              Container(
-                                height: 50,
-                                margin: EdgeInsets.symmetric(horizontal: 50),
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(50),
-                                  color: Color.fromARGB(255, 45, 128, 121),
-                                ),
-                                child: Center(
-                                  child: Text(
-                                    "Login",
-                                    style: TextStyle(
-                                        color: Colors.white,
-                                        fontWeight: FontWeight.bold),
+                              InkWell(
+                                onTap: () {
+                                  auth.login();
+                                },
+                                child: Container(
+                                  height: 50,
+                                  margin: EdgeInsets.symmetric(horizontal: 50),
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(50),
+                                    color: Color.fromARGB(255, 45, 128, 121),
+                                  ),
+                                  child: Center(
+                                    child: Text(
+                                      "Login",
+                                      style: TextStyle(
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.bold),
+                                        
+                                    ),
+                                    
                                   ),
                                 ),
                               ),
                               SizedBox(
-                                height: 80,
+                                height: 70,
                               ),
                               Row(
                                 children: [
