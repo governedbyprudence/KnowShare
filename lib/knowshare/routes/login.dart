@@ -7,7 +7,7 @@ import 'package:responsive_sizer/responsive_sizer.dart';
 import 'package:sign_button/constants.dart';
 import 'package:sign_button/create_button.dart';
 
-import '../provider/Auth/auth.dart';
+// import '../provider/Auth/auth.dart';
 
 class loginScreenRoute extends StatefulWidget {
   static const routeName = "login";
